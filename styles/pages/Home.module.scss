@@ -1,0 +1,160 @@
+@import "../_variables";
+
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  height: 90vh;
+  .canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 0px;
+    background: #fafafa;
+    box-shadow: inset 12px 12px 14px #d5d5d5, inset -12px -12px 14px #ffffff;
+    height: 100%;
+
+    .paper {
+      border: 2px solid $black;
+      width: 1000px;
+      height: 500px;
+      background-color: $secondary-color;
+      -webkit-box-shadow: 20px 20px 55px 5px rgba(0, 0, 0, 0.29);
+      -moz-box-shadow: 20px 20px 55px 5px rgba(0, 0, 0, 0.29);
+      box-shadow: 20px 20px 55px 5px rgba(0, 0, 0, 0.29);
+
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8%;
+        text-align: center;
+        border-top: 2px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
+      }
+
+      .top {
+        height: 36%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-weight: 800;
+        }
+        h2 {
+          margin: 10px 0;
+          font-size: 2.2rem;
+          text-align: center;
+        }
+        div {
+          width: 80%;
+          display: flex;
+          justify-content: space-around;
+        }
+        .use {
+          width: 50%;
+          padding-right: 40px;
+          text-align: justify;
+        }
+        .fdc {
+          padding-left: 20px;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .bottom {
+        height: 56%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.8rem;
+        padding-left: 5px;
+        ul {
+          height: 80%;
+          width: 23%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .checkbox {
+            margin-right: 5px;
+          }
+          li {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+          }
+        }
+        .logo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          width: 30%;
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  aside {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    padding: 20px 2%;
+    h2 {
+      text-align: center;
+      margin: 10px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    .paperType {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label {
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    input {
+      padding-left: 10px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $black;
+      border-bottom: 2px solid $primary-color;
+      font-size: 1.2rem;
+    }
+    .export {
+      margin: 20px;
+      height: 40px;
+      font-size: 1.4rem;
+      background-color: $primary-color;
+      color: $white;
+      cursor: pointer;
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.39);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.39);
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.39);
+      &:hover {
+        background-color: #585858;
+      }
+    }
+  }
+}

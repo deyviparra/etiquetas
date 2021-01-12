@@ -1,0 +1,10 @@
+@import '../../styles/_variables';
+
+.container{
+    background-color: $white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
