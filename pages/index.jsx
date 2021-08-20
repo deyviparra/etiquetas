@@ -32,7 +32,7 @@ const index = () => {
   };
 
   useEffect(() => {
-    let capture = document.getElementById("capture");
+    let captureValue = document.getElementById("capture");
     let title = document.getElementById("title");
     const fonts = document.getElementsByTagName('p');
     const lis = document.getElementsByTagName('li');
@@ -48,8 +48,8 @@ const index = () => {
     }
     )
     title.style.fontSize = data.titleFz;
-    capture.style.backgroundColor = data?.bgColor;
-    capture.style.color = data?.fontColor;
+    captureValue.style.backgroundColor = data?.bgColor;
+    captureValue.style.color = data?.fontColor;
   }, [data]);
 
   return (
